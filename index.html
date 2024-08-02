@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <form id="converter-form">
+        <label for="conversion-type">Choose conversion type:</label>
+        <select id="conversion-type">
+          <option value="1">USD to EUR</option>
+          <option value="2">USD to GBP</option>
+          <option value="3">EUR to USD</option>
+          <option value="4">EUR to GBP</option>
+          <option value="5">GBP to USD</option>
+          <option value="6">GBP to EUR</option>
+          <option value="7">USD to INR</option>
+        </select>
+        <label for="amount">Enter amount to convert:</label>
+        <input type="number" id="amount" step="0.01" required />
+        <button type="button" onclick="convertCurrency()">Convert</button>
+        <div class="result" id="result"></div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
